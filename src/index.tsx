@@ -15,9 +15,9 @@ import CancelIcon from '@material-ui/icons/Cancel';
 
 interface HealthiAccordionProps {
   medTitle?: string;
-  accordionDetails?: any;
-  dropdownButton?: any;
-  medAmount?: any;
+  accordionDetails?: React.ReactNode;;
+  dropdownButton?: React.ReactNode;;
+  medAmount?: React.ReactNode;;
   dailyRoutine?: string;
   sideIcons?: number;
 }
