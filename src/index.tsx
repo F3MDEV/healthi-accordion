@@ -14,12 +14,30 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import CancelIcon from '@material-ui/icons/Cancel';
 
 interface HealthiAccordionProps {
+  /**
+     * Title of the medication
+  */
   medTitle?: string;
-  accordionDetails?: React.ReactNode;;
-  dropdownButton?: React.ReactNode;;
-  medAmount?: React.ReactNode;;
+  /**
+     * Insert elements in the accordion details.
+  */
+  accordionDetails?: React.ReactNode;
+  /**
+     * Insert a button for the dropdown.
+  */
+  dropdownButton?: React.ReactNode;
+  /**
+     * Info about the med amount.
+  */
+  medAmount?: React.ReactNode;
+  /**
+     * How many times the patient takes the medication a day.
+  */
   dailyRoutine?: string;
-  sideIcons?: number;
+  /**
+     * Insert elements in the side icons area.
+  */
+  sideIcons?: React.ReactNode;
 }
 
 const HealthiAccordion: FunctionComponent<HealthiAccordionProps> = ({
