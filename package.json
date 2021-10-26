@@ -2,7 +2,7 @@
   "name": "healthi-accordion",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "rollup -c",
     "start": "rollup -c -w"
@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/F3MDEV/healthi-accordion.git"
   },
+  "files": [
+    "dist"
+  ],
   "peerDependencies": {
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
@@ -35,8 +38,10 @@
     "typescript": "^4.4.4"
   },
   "dependencies": {
+    "@fontsource/open-sans": "^4.5.1",
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
-    "@mui/material": "^5.0.4"
+    "@mui/material": "^5.0.4",
+    "fontsource-open-sans": "^1.1.13"
   }
 }

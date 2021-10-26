@@ -1,3 +1,4 @@
+import "@fontsource/open-sans"; 
 import * as React from 'react';
 import { FunctionComponent } from "react";
 
@@ -7,6 +8,7 @@ import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails'
 import Typography from '@material-ui/core/Typography';
+
 
 //ICONS
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -41,18 +43,18 @@ interface HealthiAccordionProps {
 }
 
 const HealthiAccordion: FunctionComponent<HealthiAccordionProps> = ({
-  medTitle = "Med1",
-  medAmount = "x5",
+  medTitle = "Tramadol + Paracetamol, 37.5 mg + 325 mg, Comprimido efervescente, Fita termossoldada",
+  medAmount,
   dailyRoutine = "3 por dia",
-  accordionDetails= "Detalhes",
+  accordionDetails= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lacinia dui augue, vitae pulvinar leo pretium at. Nunc est mauris, ultrices eu elit quis, rhoncus facilisis velit. Praesent auctor eu sapien sed ultricies. Fusce at tellus varius, pharetra dolor non, feugiat ipsum. Mauris sodales enim nulla, ac pharetra massa porttitor in. Ut id faucibus eros. Morbi pretium sed sapien sit amet scelerisque. Maecenas feugiat gravida fermentum. Aliquam malesuada ligula id lectus facilisis finibus. Pellentesque consequat nibh ut porttitor volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent eget turpis id ligula ultricies rhoncus vitae at lacus. Sed efficitur auctor nibh sed maximus. Duis ullamcorper quam in fringilla egestas. Vestibulum mattis varius ante at blandit. Phasellus felis erat, sollicitudin at sodales id, auctor at ligula.",
   dropdownButton,
   sideIcons = <>
-    <CancelIcon color="secondary" className="my-auto mx-3">
+    <CancelIcon style={{color: "#04a0aa"}} className="my-auto mx-3">
     </CancelIcon>
   </>
 }) => {
   
-  const useStyles = makeStyles((theme: { palette: { accordion: { summaryBackground: any; colorBorder: any; detailsBackground: any; }; }; }) => ({
+  const useStyles = makeStyles(() => ({
     root: {
       "&.MuiAccordion-root":{
         "&.MuiPaper-elevation1":{
@@ -63,10 +65,10 @@ const HealthiAccordion: FunctionComponent<HealthiAccordionProps> = ({
       "&.MuiAccordionSummary-root":{
         backgroundColor: "#ccecee",
         border: "1px solid",
-        borderColor: theme.palette.accordion.colorBorder,
+        borderColor: "#8ccdd3",
         borderRadius: 5,
         paddingRight: '1rem',
-        paddingLeft: 0,
+        paddingLeft: '1rem',
         height: 60
       },
       "&.MuiAccordionDetails-root":{
@@ -80,13 +82,13 @@ const HealthiAccordion: FunctionComponent<HealthiAccordionProps> = ({
       },
     },
     body1: {
-      fontFamily: 'Open Sans',
       fontSize: 14,
       color: "#026066",
-      textDecoration: 'none solid rgb(2, 96, 102)'
+      textDecoration: 'none solid rgb(2, 96, 102)',
+      fontFamily: 'Open Sans'
     },
-    
     title:{
+      fontFamily: 'Open Sans',
       overflow: 'hidden',
       textOverflow: 'ellipsis',
       boxOrient: 'vertical',
@@ -112,7 +114,7 @@ const HealthiAccordion: FunctionComponent<HealthiAccordionProps> = ({
     <Accordion className={classes.root}>
         <AccordionSummary
           className={classes.root}
-          expandIcon={<ExpandMoreIcon color="secondary"/>}
+          expandIcon={<ExpandMoreIcon style={{color: "#04a0aa"}}/>}
           aria-controls="panel1a-content"
           id="panel1a-header">
           {dropdownButton}

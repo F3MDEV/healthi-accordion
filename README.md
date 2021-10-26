@@ -74,8 +74,44 @@ ReactDOM.render(<App />, document.querySelector("#app"));
         </div>
       </td>
       <td>
-        <span>Med1
+        <span>Tramadol + Paracetamol, 37.5 mg + 325 mg, Comprimido efervescente, Fita termossoldada
         </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>medAmount</span>
+      </td>
+      <td>
+        <div>
+          <span>Amount of the medication.</span>
+        </div>
+        <div>
+          <div>
+            <span>React.ReactNode</span>
+          </div>
+        </div>
+      </td>
+      <td>
+        <span>-</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>dailyRoutine</span>
+      </td>
+      <td>
+        <div>
+          <span>How many times patient take the medication daily.</span>
+        </div>
+        <div>
+          <div>
+            <span>React.ReactNode</span>
+          </div>
+        </div>
+      </td>
+      <td>
+        <span>3 por dia</span>
       </td>
     </tr>
     <tr>
@@ -93,7 +129,7 @@ ReactDOM.render(<App />, document.querySelector("#app"));
         </div>
       </td>
       <td>
-        <span>"Detalhes"
+        <span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lacinia dui augue, vitae pulvinar leo pretium at. Nunc est mauris, ultrices eu elit quis, rhoncus facilisis velit. Praesent auctor eu sapien sed ultricies. Fusce at tellus varius, pharetra dolor non, feugiat ipsum. Mauris sodales enim nulla, ac pharetra massa porttitor in. Ut id faucibus eros. Morbi pretium sed sapien sit amet scelerisque. Maecenas feugiat gravida fermentum. Aliquam malesuada ligula id lectus facilisis finibus. Pellentesque consequat nibh ut porttitor volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent eget turpis id ligula ultricies rhoncus vitae at lacus. Sed efficitur auctor nibh sed maximus. Duis ullamcorper quam in fringilla egestas. Vestibulum mattis varius ante at blandit. Phasellus felis erat, sollicitudin at sodales id, auctor at ligula."
         </span>
       </td>
     </tr>
@@ -153,6 +189,66 @@ ReactDOM.render(<App />, document.querySelector("#app"));
                 <CancelIcon color="secondary" className="my-auto mx-3">
                 </CancelIcon>
             </>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>medAmount</span>
+      </td>
+      <td>
+        <div>
+          <span>Info about the med amount.</span>
+        </div>
+        <div>
+          <div>
+            <span>React.ReactNode</span>
+          </div>
+        </div>
+      </td>
+      <td>
+        <span>
+            -
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>dailyRoutine</span>
+      </td>
+      <td>
+        <div>
+          <span>How many times the patient takes the medication a day.</span>
+        </div>
+        <div>
+          <div>
+            <span>string</span>
+          </div>
+        </div>
+      </td>
+      <td>
+        <span>
+            3 por dia
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>sideIcons</span>
+      </td>
+      <td>
+        <div>
+          <span>Insert elements in the side icons area.</span>
+        </div>
+        <div>
+          <div>
+            <span>React.ReactNode</span>
+          </div>
+        </div>
+      </td>
+      <td>
+        <span>
+          <CancelIcon style={{color: "#04a0aa"}} className="my-auto mx-3"></CancelIcon>
         </span>
       </td>
     </tr>
